@@ -25,6 +25,8 @@ A sample web application project used to learn Claude Code primitives across the
 - Reference the `<JIRA-ID>` in the branch name, commit message, and PR title so Jira's
   GitHub integration auto-links the work to the ticket.
 - PRs use `.github/pull_request_template.md`. GitHub ops go through the `gh` CLI.
+- Jira ticket details are read via the Atlassian MCP server (configured in `.mcp.json`).
+  Use it to pull acceptance criteria at the start of a ticket and to comment/transition.
 
 ## How this repo is set up for learning
 - `.claude/commands/story.md`  — custom slash command (`/story`)

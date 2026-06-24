@@ -10,6 +10,11 @@ Treat the first token as the Jira ticket ID (e.g. `PROJ-123`) and the rest as a 
 kebab-case description. Work through these stages **in order** and stop to report after each
 gate; do not skip a failing gate.
 
+## 0. Read the Jira ticket (if Atlassian MCP is connected)
+- Use the Atlassian MCP tools to fetch the ticket `<JIRA-ID>`: summary, description,
+  and acceptance criteria. Restate the acceptance criteria back before coding so we agree
+  on scope. If the MCP isn't connected, ask the user to paste the ticket details.
+
 ## 1. Create the feature branch
 - Confirm the working tree is clean (`git status`). If dirty, stop and ask.
 - Branch off the latest `main`:
