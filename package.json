@@ -1,0 +1,12 @@
+{
+  "name": "claudecodelearning",
+  "version": "0.1.0",
+  "description": "Sample web app for learning Claude Code across the SDLC",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "test:coverage": "node --test --experimental-test-coverage",
+    "lint": "node --check src/*.js && echo \"lint: syntax OK\""
+  },
+  "license": "MIT"
+}
