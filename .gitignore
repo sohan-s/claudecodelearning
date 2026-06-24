@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+.env.*
+coverage/
+*.log
+
+# Personal, per-developer Claude settings (keep out of shared history)
+.claude/settings.local.json
