@@ -19,6 +19,13 @@ A sample web application project used to learn Claude Code primitives across the
 - Test: `npm test`
 - Lint: `npm run lint`
 
+## GitHub + Jira workflow
+- One ticket = one feature branch = one PR. Branch: `feature/<JIRA-ID>-<short-desc>`.
+- Always start a Jira ticket with `/ship <JIRA-ID> <desc>` (see `.claude/commands/ship.md`).
+- Reference the `<JIRA-ID>` in the branch name, commit message, and PR title so Jira's
+  GitHub integration auto-links the work to the ticket.
+- PRs use `.github/pull_request_template.md`. GitHub ops go through the `gh` CLI.
+
 ## How this repo is set up for learning
 - `.claude/commands/story.md`  — custom slash command (`/story`)
 - `.claude/skills/write-tests/` — a Skill (model auto-invokes)
